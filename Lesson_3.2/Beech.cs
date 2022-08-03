@@ -4,10 +4,11 @@ using System.Text;
 
 namespace Lesson_3._2
 {
-    class Chipboard : Wood
+    internal class Beech : Wood
     {
-        public Chipboard(string name, string type, string color, decimal price) : base(name, type, color, price) { }
-
+        public Beech(string name, string type, string color, decimal price) : base(name, type, color, price)
+        {
+        }
         public new void PrintAboutItem()
         {
             base.PrintAboutItem();

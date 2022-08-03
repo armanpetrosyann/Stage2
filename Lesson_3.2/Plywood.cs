@@ -13,6 +13,7 @@ namespace Lesson_3._2
 
         public new void PrintAboutItem()
         {
+            base.PrintAboutItem();
         }
     }
 }
