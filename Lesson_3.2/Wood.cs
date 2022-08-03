@@ -7,14 +7,13 @@ namespace Lesson_3._2
     internal class Wood : IItemActions
     {
         protected string name;
-        protected string type;
+        protected MyEnum type;
         protected string color;
-        protected decimal price
+        protected decimal price;
 
         public Wood(string name, string type, string color, decimal price)
         {
             this.name = name;
-            this.type = type;
             this.color = color;
             this.price = price;
         }
@@ -24,5 +23,12 @@ namespace Lesson_3._2
             Console.WriteLine($"Wood name is {name}, wood type is {type}, wood color is {color}, wood price is {price}");
         }
 
+    }
+    enum MyEnum
+    {
+        light,
+        dark,
+        lighten,
+        darken
     }
 }
