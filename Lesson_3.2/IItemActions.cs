@@ -6,6 +6,6 @@ namespace Lesson_3._2
 {
     internal interface IItemActions
     {
-
+        public void PrintAboutItem();
     }
 }

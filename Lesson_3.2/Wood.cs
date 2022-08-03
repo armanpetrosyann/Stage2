@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lesson_3._2
 {
-    internal class Wood
+    internal class Wood : IItemActions
     {
         protected string name;
         protected string type;
@@ -17,6 +17,11 @@ namespace Lesson_3._2
             this.type = type;
             this.color = color;
             this.price = price;
+        }
+
+        public void PrintAboutItem()
+        {
+            Console.WriteLine($"Wood name is {name}, wood type is {type}, wood color is {color}, wood price is {price}");
         }
     }
 }
