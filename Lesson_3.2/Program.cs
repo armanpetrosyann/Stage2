@@ -8,15 +8,18 @@ namespace Lesson_3._2
         {
             Chipboard chipboard = new Chipboard("Chipboard", "dark", "Orange", 1000);
 
-            chipboard.type = MyEnum.dark;
+            chipboard.type = Types.dark;
+            chipboard.color = Colors.orange;
 
             Plywood plywood = new Plywood("Plywood", "light", "Cream", 3000);
 
-            plywood.type = MyEnum.light;
+            plywood.type = Types.light;
+            chipboard.color = Colors.cream;
 
             Beech beech = new Beech("Beech", "light", "Chockolate", 5000);
 
-            beech.type = MyEnum.light;
+            beech.type = Types.lighten;
+            beech.color = Colors.chockolate;
 
             chipboard.PrintAboutItem();
 
