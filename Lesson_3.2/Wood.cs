@@ -6,10 +6,10 @@ namespace Lesson_3._2
 {
     internal class Wood : IItemActions
     {
-        protected string name;
-        protected string type;
-        protected string color;
-        protected decimal price;
+        protected string name { get; set; }
+        protected string type { get; set; }
+        protected string color { get; set; }
+        protected decimal price { get; set; }
 
         public Wood(string name, string type, string color, decimal price)
         {
